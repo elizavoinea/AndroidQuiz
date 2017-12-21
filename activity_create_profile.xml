@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.androidquiz.createProfile"
+    android:background="@drawable/andrwallpaper"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif-monospace"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TypeHere"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/name"
+        android:fontFamily="serif-monospace"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgLoaded"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/photo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonImageBrowser"
+        android:background="@drawable/andrwallpaper"
+        android:textColor="@color/green"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/nameButton"
+        android:onClick="getName"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/saveName"
+        android:textColor="@color/green"
+        android:background="@drawable/andrwallpaper"
+        android:layout_marginTop="8dp"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

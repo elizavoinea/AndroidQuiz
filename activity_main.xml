@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.androidquiz.MainActivity"
+    android:background="@drawable/andrwallpaper">
+
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="  "
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/setNameOnScreen"
+            android:textColor="@color/green"
+            android:textSize="30dp"
+            android:layout_marginLeft="40dp"
+
+
+
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageFirstActivity"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp"
+            />
+
+        </LinearLayout>
+
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:text="@string/start"
+           android:onClick="startActivity"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/andrwallpaper"
+           android:textColor="@color/green"/>
+       <Button
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:text="@string/instruction"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/andrwallpaper"
+           android:textColor="@color/green"
+           android:id="@+id/instructionButton"
+           android:onClick="instructionActivity"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/profile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/andrwallpaper"
+            android:textColor="@color/green"
+            android:onClick="profileActivity"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/useProfile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/andrwallpaper"
+            android:textColor="@color/green"
+            android:id="@+id/saveProfileButton"
+            android:onClick="saveProfileMethod"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/result"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/andrwallpaper"
+            android:textColor="@color/green"
+            android:onClick="seeResult"
+
+            />
+
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/luck"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        />
+</RelativeLayout>
